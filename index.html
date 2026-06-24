@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -155,6 +156,30 @@
     font-size:.82rem; font-weight:700; letter-spacing:.03em; white-space:nowrap;
   }
 
+  .bio-section{background:var(--navy); color:#fff; position:relative; overflow:hidden;}
+  .bio-section .burst{color:var(--sky); top:-120px; left:-80px;}
+  .bio-wrap{
+    display:flex; align-items:center; gap:46px; position:relative; z-index:2;
+    flex-wrap:wrap;
+  }
+  .bio-photo{
+    width:160px; height:160px; border-radius:50%; flex-shrink:0;
+    background:var(--sky); overflow:hidden;
+    display:flex; align-items:center; justify-content:center;
+    border:5px solid rgba(255,255,255,.25);
+  }
+  .bio-photo img{width:100%; height:100%; object-fit:cover; display:block;}
+  .bio-text h3{color:#fff; font-size:1.5rem; margin-bottom:4px;}
+  .bio-text .role{color:var(--orange); font-family:Cambria,serif; font-style:italic; font-size:.95rem; margin-bottom:14px;}
+  .bio-text p{color:#cfd6e6; font-size:.96rem; max-width:600px; margin-bottom:16px;}
+  .bio-links{display:flex; gap:14px; flex-wrap:wrap;}
+  .bio-links a{
+    display:inline-flex; align-items:center; gap:8px;
+    background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.2);
+    padding:9px 16px; border-radius:20px; font-size:.85rem; color:#fff;
+  }
+  .bio-links a:hover{background:var(--orange); border-color:var(--orange); color:var(--navy);}
+
   footer{
     background:var(--navy); color:#cfd6e6;
     text-align:center; padding:36px 5%; font-size:.84rem;
@@ -267,7 +292,7 @@
       </div>
     </div>
     <div class="gcard">
-      <div class="ring"><img src="images/catmeleon.jpg" alt="Catmeleon, a cat with chameleon camouflage skin"></div>
+      <div class="ring"><img src="images/catmelen_I_gave_him_camoflase_.jpg" alt="Catmelen, a cat with chameleon camouflage skin"></div>
       <div class="body">
         <div class="meta">Mammal · Domestic Cat</div>
         <h3>Catmelen</h3>
@@ -312,7 +337,24 @@
     </li>
   </ul>
 </section>
- 
+
+<section class="bio-section">
+  <div class="burst"></div>
+  <div class="bio-wrap" style="max-width:1180px; margin:0 auto; position:relative;">
+    <div class="bio-photo">
+      <img src="images/kendra-tarket.jpg" alt="Kendra Tarket">
+    </div>
+    <div class="bio-text">
+      <h3>Kendra Tarket</h3>
+      <div class="role">Educator &amp; Project Creator</div>
+      <p>The teacher behind this project — bringing AI into the classroom as a research and creativity partner, one animal adaptation at a time.</p>
+      <div class="bio-links">
+        <a href="https://www.linkedin.com/in/kendra-tarket/" target="_blank">LinkedIn →</a>
+        <a href="mailto:miss.tarket@gmail.com">miss.tarket@gmail.com</a>
+      </div>
+    </div>
+  </div>
+</section>
 
 <footer>
   Using AI To Help Better Visualize Animal Adaptations · <span class="orange">ISTE Live 26 — Profile of an AI Graduate Pavilion</span>
@@ -321,5 +363,3 @@
 
 </body>
 </html>
-<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="kendra-tarket" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/kendra-tarket?trk=profile-badge">Kendra Tarket</a></div>
-              
